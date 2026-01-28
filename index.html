@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,51 +8,76 @@
         /* GLOBAL PARAMETERS */
         body{
             font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f1f1f1;
             color: #353535;
         }
         /* ALL HEADINGS */
         h1, h2, h3{
             font-weight: 300;
-            margin: 1rem 0;
+            margin: 0.6rem 0;
             color: #6688aa;
         }
         /* STYLING BY ID'S */
+        #header-main{
+            background-color: #151515;
+            color: #f1f1f1;
+            padding: 0.6rem 1rem;
+        }
         #nav-main{
             background-color: #888a;
-            border: 2px solid red;        /* NOTICE "BORDER" NEEDS AT LEAST 3 "VALUES", "Thickness", "Type", "Color" */ 
+        }
+        /* ALL SECTIONS IN MAIN */
+        main section{
+            background-color: #fdfdfd;
+            padding: 0.6rem 1rem;
         }
         /* ALL ANCHORS */
         a{
-            display: inline-block;          /* NOTICE "INLINE" DOES NOT "SUPPORT" THINGS LIKE "PADDING" */
+            display: inline-block;            /* NOTICE "INLINE" DOES NOT "SUPPORT" THINGS LIKE "PADDING" */
             text-decoration: none;
             color: #efefef;
-            background-color: #38383888; /* "TRANSPARENT" HEX-COLOR: (EIGHT DIGITS) */
-            padding: 0.5rem 1rem;
-            transition: 450ms ease-in-out;
+            background-color: #38383888;    /* "TRANSPARENT" HEX-COLOR: (EIGHT DIGITS) */
+            padding: 0.3rem 1rem;
+            transition: 450ms ease-in-out;    /* "TIME" TO GET FROM ONE "STATE" TO ANOTHER */
         }
-        /* PSEUDO CLASS */
+        /* PSEUDO CLASS (HOVER) */
         a:hover{
             background-color:  #383838ff;
+            color: #fff;
+        }
+
+        /* LIST STYLING (ANCHORS INSIDE AN UNORDERED LIST) */
+        #nav-main ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #nav-main ul li{
+            display: inline;
+            margin-bottom: 0.3rem;
         }
     </style>
 </head>
 <body>
     <!-- GLOBAL HEADER -->
-    <header>
+    <header id="header-main">
         <h1>Lists in HTML?</h1>
     </header>
     <!-- GLOBAL NAVIGATION -->
     <nav id="nav-main">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Cases</a>
-        <a href="#">Contact</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
     <!-- GLOBAL CONTENT -->
      <main>
         <section>
-            <h2>Unordered List:</h2>
+            <h2>Der er to typer lister i HTML:</h2>
+            <h3>Unordered List:</h3>
             <ul>
                 <li>List Item One</li>
                 <li>List Item Two</li>
@@ -60,7 +85,14 @@
                 <li>List Item Four</li>
                 <li>List Item Five</li>
             </ul>
-            <h2>Ordered List:</h2>
+            <ul>
+                <li>List Item One</li>
+                <li>List Item Two</li>
+                <li>List Item Three</li>
+                <li>List Item Four</li>
+                <li>List Item Five</li>
+            </ul>
+            <h3>Ordered List:</h3>
             <ol>
                 <li>List Item One</li>
                 <li>List Item Two</li>
