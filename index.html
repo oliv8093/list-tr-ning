@@ -1,14 +1,74 @@
-<!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boiler-plate</title>
-    <link rel="shortcut icon" href="assets/img/30x6si.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/site.css">
-    <script src="assets/js/site.js"></script>
+    <title>Lists in Html</title>
+    <style>
+        /* GLOBAL PARAMETERS */
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #353535;
+        }
+        /* ALL HEADINGS */
+        h1, h2, h3{
+            font-weight: 300;
+            margin: 1rem 0;
+            color: #6688aa;
+        }
+        /* STYLING BY ID'S */
+        #nav-main{
+            background-color: #888a;
+            border: 2px solid red;        /* NOTICE "BORDER" NEEDS AT LEAST 3 "VALUES", "Thickness", "Type", "Color" */ 
+        }
+        /* ALL ANCHORS */
+        a{
+            display: inline-block;          /* NOTICE "INLINE" DOES NOT "SUPPORT" THINGS LIKE "PADDING" */
+            text-decoration: none;
+            color: #efefef;
+            background-color: #38383888; /* "TRANSPARENT" HEX-COLOR: (EIGHT DIGITS) */
+            padding: 0.5rem 1rem;
+            transition: 450ms ease-in-out;
+        }
+        /* PSEUDO CLASS */
+        a:hover{
+            background-color:  #383838ff;
+        }
+    </style>
 </head>
 <body>
- boilerplate 
+    <!-- GLOBAL HEADER -->
+    <header>
+        <h1>Lists in HTML?</h1>
+    </header>
+    <!-- GLOBAL NAVIGATION -->
+    <nav id="nav-main">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Cases</a>
+        <a href="#">Contact</a>
+    </nav>
+    <!-- GLOBAL CONTENT -->
+     <main>
+        <section>
+            <h2>Unordered List:</h2>
+            <ul>
+                <li>List Item One</li>
+                <li>List Item Two</li>
+                <li>List Item Three</li>
+                <li>List Item Four</li>
+                <li>List Item Five</li>
+            </ul>
+            <h2>Ordered List:</h2>
+            <ol>
+                <li>List Item One</li>
+                <li>List Item Two</li>
+                <li>List Item Three</li>
+                <li>List Item Four</li>
+                <li>List Item Five</li>
+            </ol>
+        </section>
+     </main>
 </body>
 </html>
